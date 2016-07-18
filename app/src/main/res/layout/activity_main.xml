@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="0dp"
-    android:background="@color/white"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -15,19 +14,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/teal"
-        android:elevation="10dp"
+        android:elevation="20dp"
+        android:padding="2dp"
         android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/eq"
+        android:id="@+id/display"
         android:gravity="right"
         android:fontFamily="sans-serif-light"
         android:textColor="#FFFFFF"
-        android:text="50+50"
-        android:background="@color/teal"
-        android:padding="5dp"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="10dp"
         android:textSize="40sp"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,215 +35,278 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="="
-    android:background="@color/teal"
+    android:id="@+id/eq"
+    android:fontFamily="sans-serif-light"
+    android:padding="5dp"
+    android:background="@android:color/holo_blue_bright"
     android:textColor="#FFFFFF"
     android:gravity="left"
     android:textSize="60sp"
     />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="100"
+                android:layout_height="match_parent"
+                android:id="@+id/ans"
+                android:padding="5dp"
+                android:fontFamily="sans-serif-light"
                 android:textColor="#FFFFFF"
                 android:gravity="right"
-                android:background="@color/teal"
+                android:background="@android:color/holo_blue_bright"
                 android:textSize="60sp"
                 />
             </LinearLayout>
 
     </LinearLayout>
     <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:background="@color/material_grey_800">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:padding="20dp"
+            android:textSize="25sp"
+            android:id="@+id/clr"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:background="@color/material_grey_800"
+            android:text="CLEAR"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/del"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:text="DEL"
+            android:fontFamily="sans-serif-light"
+            android:background="@color/material_grey_600"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/material_grey_800">
 
-        >
         <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+           android:layout_weight="1"
             android:orientation="vertical"
-            android:background="@color/darkgray">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+            >
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="1"
             android:id="@+id/seven"
             android:text="7"
             android:fontFamily="sans-serif-light"
-            android:background="@color/darkgray"
+            android:background="@color/material_grey_800"
             android:textColor="#FFFFFF"
-            android:textSize="50sp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/eight"
-            android:text="8"
-            android:fontFamily="sans-serif-light"
-            android:background="@color/darkgray"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/nine"
-            android:text="9"
-            android:fontFamily="sans-serif-light"
-            android:background="@color/darkgray"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp"/>
 
-        </LinearLayout>
-        <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:textSize="30sp"/>
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:id="@+id/four"
             android:text="4"
-            android:background="@color/darkgray"
+            android:padding="5dp"
+            android:background="@color/material_grey_800"
             android:textColor="#FFFFFF"
             android:fontFamily="sans-serif-light"
-            android:textSize="50sp"/>
+            android:textSize="30sp"/>
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/five"
-            android:text="5"
-            android:background="@color/darkgray"
+            android:layout_height="wrap_content"
+            android:id="@+id/one"
+            android:text="1"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="@color/material_grey_800"
             android:textColor="#FFFFFF"
             android:fontFamily="sans-serif-light"
-            android:textSize="50sp""/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/six"
-            android:text="6"
-            android:background="@color/darkgray"
-            android:textColor="#FFFFFF"
-            android:fontFamily="sans-serif-light"
-            android:textSize="50sp""/>
-        </LinearLayout>
-         <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/one"
-        android:text="1"
-        android:background="@color/darkgray"
-        android:textColor="#FFFFFF"
-        android:fontFamily="sans-serif-light"
-        android:textSize="50sp""/>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/two"
-    android:text="2"
-    android:background="@color/darkgray"
-    android:textColor="#FFFFFF"
-    android:fontFamily="sans-serif-light"
-    android:textSize="50sp""/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/three"
-            android:text="3"
-            android:background="@color/darkgray"
-            android:textColor="#FFFFFF"
-            android:fontFamily="sans-serif-light"
-            android:textSize="50sp""/>
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:textSize="30sp"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/point"
             android:text="."
-            android:background="@color/darkgray"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="@color/material_grey_800"
             android:textColor="#FFFFFF"
             android:fontFamily="sans-serif-light"
-            android:textSize="50sp""/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/zero"
-            android:fontFamily="sans-serif-light"
-            android:text="0"
-            android:background="@color/darkgray"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp""/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/equal"
-            android:text="="
-            android:background="@color/darkgray"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp"
-            android:fontFamily="sans-serif-light"/>
-        </LinearLayout></LinearLayout>
-    <LinearLayout
+            android:paddingBottom="30dp"
+            android:textSize="30sp"/>
+        </LinearLayout>
+        <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/lightgray">
-
+            android:layout_weight="1"
+        android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eight"
+                android:text="8"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:fontFamily="sans-serif-light"
+                android:background="@color/material_grey_800"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DEL"
-            android:background="@color/lightgray"
+            android:id="@+id/five"
+            android:text="5"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@color/material_grey_800"
             android:textColor="#FFFFFF"
-            android:textSize="40sp"
             android:fontFamily="sans-serif-light"
-            android:id="@+id/div"/>
+            android:textSize="30sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/two"
+                android:text="2"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@color/material_grey_800"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-light"
+                android:textSize="30sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zero"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@color/material_grey_800"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            </LinearLayout>
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+             android:layout_weight="1"
+        android:orientation="vertical">
+             >
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/nine"
+                 android:text="9"
+                 android:fontFamily="sans-serif-light"
+                 android:background="@color/material_grey_800"
+                 android:textColor="#FFFFFF"
+                 android:layout_weight="1"
+                 android:padding="5dp"
+                 android:textSize="30sp"/>
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/six"
+                 android:text="6"
+                 android:layout_weight="1"
+                 android:padding="5dp"
+                 android:background="@color/material_grey_800"
+                 android:textColor="#FFFFFF"
+                 android:fontFamily="sans-serif-light"
+                 android:textSize="30sp"/>
+             <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/three"
+            android:text="3"
+            android:background="@color/material_grey_800"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="30sp"/>
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/equal"
+                 android:text="="
+                 android:layout_weight="1"
+                 android:background="@color/material_grey_800"
+                 android:textColor="#FFFFFF"
+                 android:textSize="30sp"
+                 android:padding="5dp"
+                 android:fontFamily="sans-serif-light"/>
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
-            android:padding="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
             android:textColor="#FFFFFF"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:fontFamily="sans-serif-light"
-            android:background="@color/lightgray"
+            android:background="@color/material_grey_600"
             android:id="@+id/add"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
-            android:background="@color/lightgray"
+            android:background="@color/material_grey_600"
             android:textColor="#FFFFFF"
-            android:textSize="50sp"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:layout_weight="1"
             android:fontFamily="sans-serif-light"
             android:id="@+id/sub"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/lightgray"
+            android:background="@color/material_grey_600"
             android:text="*"
+            android:layout_weight="1"
             android:textColor="#FFFFFF"
             android:fontFamily="sans-serif-light"
-            android:textSize="50sp"
+            android:textSize="30sp"
+            android:padding="5dp"
             android:id="@+id/mul"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
-            android:background="@color/lightgray"
+            android:background="@color/material_grey_600"
             android:textColor="#FFFFFF"
-            android:textSize="50sp"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:layout_weight="1"
             android:fontFamily="sans-serif-light"
             android:id="@+id/div"/>
-    </LinearLayout></LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

@@ -6,11 +6,6 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:background">@color/colorBack</item>
-        <item name="teal">@color/teal</item>
-        <item name="white">@color/white</item>
-        <item name="darkgray">@color/darkgray</item>
-        <item name="lightgray">@color/lightgray</item>
     </style>
 
 </resources>
